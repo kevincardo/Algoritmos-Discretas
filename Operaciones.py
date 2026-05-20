@@ -97,3 +97,13 @@ def imprimir_matriz(M, nombre):
     print(f"\n  Matriz {nombre}:")
     for fila in M:
         print("   ", fila)
+
+
+def main() -> None:
+    matriz, n = ingresar_matriz()
+    s = calcular_S(matriz, n)
+    print(es_conexo(s, n))
+
+
+if __name__ == "__main__":
+    main()
